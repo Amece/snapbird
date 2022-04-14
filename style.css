@@ -1,0 +1,177 @@
+@media(min-width: 768px){
+    .container-1, .container-nav, .container-2{
+        display: flex;
+        /* Code to align uneven boxes on top, bottom or center
+        align-items:flex-start;
+        align-items:flex-end;
+        align-items:center;
+         */
+    }
+}
+
+body{
+    background-color: #252525;
+    min-height: 400px;
+    margin-bottom: 100px;
+    clear: both;
+    /*color: ghostwhite;*/
+    /*font-family: 'Roboto', sans-serif;*/
+}
+.container-nav,  header{
+    background-color: #181818;
+}
+.container-1{
+    flex-direction: row;
+    min-height: 0;
+}
+
+.container-2 {
+    font-family: 'Roboto', sans-serif;
+}
+.item-1, .item-2{
+    display: flex;
+    border: 1px ghostwhite solid;
+}
+
+.item-1{
+    flex:2.8;
+    background-color: black;
+    justify-content: center;
+    color: ghostwhite;
+}
+.item-2{
+    flex:0.6;
+    background-color: black;
+    color: ghostwhite;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+.item-4{
+    flex: 1;
+    text-align: center;
+    color: ghostwhite;
+    position: relative;
+    top: 30px;
+}
+/* For vogel pagina */
+
+.vogel-1, .vogel-2, .vogel-3{
+    display: flex;
+    border: 1px ghostwhite solid;
+    justify-content: center;
+    color: ghostwhite;
+    background-color: #1d1d1d;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    max-height: 1000px;
+}
+
+.vogel-1{
+    flex:1; 
+}
+
+.vogel-2{
+    flex:1;
+}
+
+.vogel-3{
+    flex:1;
+}
+
+.nav-item{
+    display: flex;
+    flex:1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 350;
+    line-height: 1.5;
+    justify-content: center;
+}
+
+footer{
+    flex:1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: #181818;
+    opacity: 60%;
+}
+
+/* Navigation bar */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: #b9b9b9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*  Change the link color to #111 (Black) on hover  */
+li a:hover{
+    color: ghostwhite;
+}
+
+iframe {
+    display:block;
+    width:100%;
+}
+
+.logo {
+    padding-left: 10%;
+}
+
+.birdlogo {
+    max-width: 50px;
+    max-height: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+#result {
+    color: red;
+}
+
+#accuracy {
+    color: lightgreen;
+}
+
+#video {
+    width: 100%;
+    max-width: 900px;
+    max-height: 680px;
+}
+
+.content {
+    width: 100%;
+    max-width: 900px;
+    height: 100%;
+    max-height: 900px;
+    text-align: center;
+    color: ghostwhite;
+    font-family: sans-serif;
+    align-content: center;
+    background-color: black;
+}
+
+.bird {
+    max-width: 600px;
+    width: 100%;
+}

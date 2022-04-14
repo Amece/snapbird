@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snapbird</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!--  Main  -->
+<div id="wrapper">
+
+    <header>
+        <div class="logo">
+            <a href="#"><img class="birdlogo" src="img/vogel.png"></a>
+        </div>
+    </header>
+    <!-- Navigation content -->
+
+    <div class="container-nav">
+        <div class="nav-item">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="vogels.html">Vogels</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navigation content -->
+
+    <!-- Main content -->
+    <div class="container-1">
+        <div class="item-1">
+            <video id="video" width="900" height="680" autoplay></video>        
+        </div>
+        <div class="item-2">
+            <p>Het leerbare machine model ziet dit als <span id="result">...</span> met een vertrouwen van <span id="accuracy">...</span>%.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="item-4">
+            <h2>| Voor meer informatie welke vogels we herkennen kunt u naar de vogel pagina gaan |</h2>
+        </div>
+    </div>
+
+    <!-- End Main content -->
+
+    <!-- Footer content -->
+    <footer>
+        <section>
+                <p>© Snapbird 2022</p>
+        </section>
+    </footer>
+    <!-- End Footer content -->
+</div>
+
+<script src="sketch.js"></script>
+<!-- End Main -->
+</body>
+</html>
