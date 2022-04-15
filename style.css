@@ -20,6 +20,7 @@ body{
 .container-nav,  header{
     background-color: #181818;
 }
+
 .container-1{
     flex-direction: row;
     min-height: 0;
@@ -31,6 +32,10 @@ body{
 .item-1, .item-2{
     display: flex;
     border: 1px ghostwhite solid;
+}
+
+.headline {
+    font-size: 20px;
 }
 
 .item-1{
