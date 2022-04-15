@@ -1,5 +1,6 @@
 // Get the div details
 const video = document.getElementById("video");
+let accuracy = 0;
 
 // Create the video segment
 navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
@@ -11,7 +12,8 @@ navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
 const loop = classifier => {
   classifier.classify().then(results => {
     document.getElementById("result").innerHTML = results[0].label;
-    document.getElementById("accuracy").innerHTML = results[0].confidence.toFixed(2);
+    accuracy = results[0].confidence * 100;
+    document.getElementById("accuracy").innerHTML = accuracy.toFixed(2);
     loop(classifier);
   });
 };
